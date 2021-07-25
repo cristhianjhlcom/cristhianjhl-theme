@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, Head } from "frontity";
-import Switch from "@frontity/components/Switch";
+import Switch from "@frontity/components/switch";
 import { Normalize, GlobalStyle } from "../../GlobalStyle";
 import { Main, Container } from "./Root.styles";
 import Home from "../Home";
