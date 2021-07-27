@@ -12,6 +12,11 @@ export const Content = styled.div`
     background-color: rgba(255, 255, 255, 0.88);
     padding: 1.25rem;
     border-radius: var(--rounded);
+
+    @media screen and (max-width: 960px) {
+        padding: 0;
+    }
+    
     img {
         max-width: 100%;
         height: 100%;

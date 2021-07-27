@@ -38,13 +38,17 @@ export const Content = styled.section`
 
     p {
         line-height: 1.8;
-        margin: 1.25rem 0 0 0;
+        margin: 1.25rem 0;
         
         a {
             color: var(--linkColor);
             text-decoration: none;
         }
+        @media screen and (min-width: 960px) {
+            margin: 1.25rem 0 0 0;
+        }
     }
+
 
     ul {
         padding: 0;
