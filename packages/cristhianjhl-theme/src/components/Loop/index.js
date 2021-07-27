@@ -2,12 +2,10 @@ import React from 'react';
 import { connect } from "frontity";
 import Link from "@frontity/components/link";
 import Image from "@frontity/components/image";
-import { Wrapper, List, ListHeader, ListContainer, ListCard, ListImagePreview, ListCardBody, ListCardTitle } from './Loop.styles';
+import { Wrapper, List, ListHeader, ListContainer, ListCard, ListImagePreview, ListCardExcerpt, ListCardBody, ListCardTitle } from './Loop.styles';
 
 function Loop({ data = [], libraries, state }) {
     const Html2React = libraries.html2react.Component;
-
-    console.log(data.items);
 
     return (
         <List backgroundColor="var(--white)">
@@ -20,8 +18,13 @@ function Loop({ data = [], libraries, state }) {
                     {
                         data.isReady
                         ? data.items.map((item) => {
-                            const { yoast_head_json: { og_image }, title: { rendered: title }, content: { rendered: content }, link  } = state.source[item.type][item.id];
-
+                            const { 
+                                yoast_head_json: { og_image }, 
+                                title: { rendered: title }, 
+                                yoast_head_json: { description }, 
+                                link  } = state.source[item.type][item.id];
+                            
+                            console.log(state.source[item.type][item.id]);
                             
                             return (
                                 <ListCard key={`posts-${item.id}`}>
@@ -30,7 +33,9 @@ function Loop({ data = [], libraries, state }) {
                                     </ListImagePreview>
                                     <ListCardBody>
                                         <ListCardTitle>{title}</ListCardTitle>
-                                        <Html2React html="<p>EXCERPT ipsum dolor sit amet, consectetur adipisicing elit. Sit explicabo dolor a qui hic esse non ratione iure vero cumque.</p>" />
+                                        <ListCardExcerpt>
+                                            <Html2React html={description} />
+                                        </ListCardExcerpt>
                                         <Link link={link}>Ver Proyecto &rarr;</Link>
                                     </ListCardBody>
                                 </ListCard>

@@ -15,8 +15,6 @@ function Post({ state, libraries }) {
     const formattedDate = dayjs().to(dayjs(post.date));
     const Html2React = libraries.html2react.Component;
 
-    console.log(author);
-
     const { title: { rendered: title }, excerpt: { rendered: excerpt }, yoast_head_json: { og_image }, content: { rendered: content },  } = post;
 
     const { link, name, description } = author;

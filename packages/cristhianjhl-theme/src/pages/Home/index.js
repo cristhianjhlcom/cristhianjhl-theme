@@ -26,7 +26,7 @@ function Home({ state, actions, libraries }) {
             </Head>
             <Hero>
                 <HeroContent>
-                    <HeroTitle>Desarrollador <span>Frontend</span> con <span>React.js</span></HeroTitle>
+                    <HeroTitle>Desarrollador <span>Frontend</span> con <span>ReactJS</span></HeroTitle>
                     <HeroDescription>Trabajando conmigo. Te garantizo calidad, aplicaciones que cumplan con los estandar de la actualidad, velocidad de carga optimas, execelente usabilidad y gran aporte al equipo.</HeroDescription>
                     <HeroCTA href="https://github.com/cristhianjhlweb/" target="_blank" rel="noopener noreferrer">
                         <GitHubIcon />
@@ -34,9 +34,9 @@ function Home({ state, actions, libraries }) {
                     </HeroCTA>
                     <HeroHelper>Te invito a revisar mi repositorio en GitHub</HeroHelper>
                 </HeroContent>
-                <ImageContainer>
+                {/* <ImageContainer>
                     <Image src="http://wp.cristhianjhl.com/wp-content/uploads/2021/07/cristhianjhl_dev.svg" alt="Cristhian Hernández, desarrollador frontend en Lima, Perú." />
-                </ImageContainer>
+                </ImageContainer> */}
             </Hero>
             {
                 proyectos 

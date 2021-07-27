@@ -27,21 +27,16 @@ export const ListItem = styled.article`
 
 export const ListThumbnail = styled.div`
     margin: 0 0 1.25rem 0;
-    height: 290px;
-    width: 100%;
     border-radius: var(--rounded);
     overflow: hidden;
 
     img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
+        width: 500px;
+        object-fit: contain;
     }
 
     @media (min-width: 960px) {
         flex: none;
-        width: 300px;
-        height: 300px;
         margin: 0;
     }
 `;
@@ -58,7 +53,7 @@ export const ListContent = styled.div`
     }
 
     p {
-        line-height: 1.8;
+        line-height: 2;
         margin: 0 0 1.25rem 0;
     }
 

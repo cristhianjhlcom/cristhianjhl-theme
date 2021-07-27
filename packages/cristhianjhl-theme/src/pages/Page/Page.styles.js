@@ -8,6 +8,10 @@ export const Wrapper = styled.section`
 `;
 
 export const Content = styled.div`
+    margin: 0 auto 1.25rem auto;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 1.25rem;
+    border-radius: var(--rounded);
     img {
         max-width: 100%;
         height: 100%;

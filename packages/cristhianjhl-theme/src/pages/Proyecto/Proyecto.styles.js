@@ -31,6 +31,13 @@ export const Information = styled.div`
 `;
 
 export const Content = styled.div`
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto 1.25rem auto;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 1.25rem;
+    border-radius: var(--rounded);
+    
     img {
         max-width: 100%;
         height: 100%;
@@ -54,7 +61,9 @@ export const Content = styled.div`
     }
 
     ul, ol {
+        padding: 0 0 0 1.25rem;
         li {
+            line-height: 2;
             padding: 0.625rem 0;
         }
     }
@@ -66,12 +75,21 @@ export const Title = styled.h1`
 
 export const Thumbnail = styled.div`
     width: 100%;
-    height: 500px;
+    height: 190px;
     margin: 0 auto 1.25rem auto;
     overflow: hidden;
     border-radius: var(--rounded);
     img {
         width: 100%;
         object-fit: cover;
+    }
+
+    @media screen and (min-width: 600px) {
+        height: 300px;
+    }
+
+    @media screen and (min-width: 1060px) {
+        height: 500px;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
     }
 `;

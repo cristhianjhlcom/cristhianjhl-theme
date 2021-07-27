@@ -37,7 +37,9 @@ function Archive({ state, libraries }) {
                                     author && <span><Link title={author.description} link={author.link}>@{author.name}</Link></span>
                                 }
                                 <span>Publicado {date_for_humans}</span>
-                                {excerpt && <Html2React html={excerpt} />}
+                                {excerpt 
+                                ? <Html2React html={excerpt} />
+                                : <p><Html2React html={post.yoast_head_json.description} /></p>}
                                 <Link className="view-url" link={link}>Ver Publicación &rarr;</Link>
                             </ListContent>
                         </ListItem>

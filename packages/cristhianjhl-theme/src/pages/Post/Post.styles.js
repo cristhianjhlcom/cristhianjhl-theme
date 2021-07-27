@@ -26,6 +26,13 @@ export const Information = styled.div`
 `;
 
 export const Content = styled.div`
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto 1.25rem auto;
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 1.25rem;
+    border-radius: var(--rounded);
+    
     img {
         max-width: 100%;
         height: 100%;
@@ -49,7 +56,9 @@ export const Content = styled.div`
     }
 
     ul, ol {
+        padding: 0 0 0 1.25rem;
         li {
+            line-height: 2;
             padding: 0.625rem 0;
         }
     }

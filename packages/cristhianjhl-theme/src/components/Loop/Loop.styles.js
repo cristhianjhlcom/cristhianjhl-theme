@@ -46,10 +46,12 @@ export const ListCard = styled.div`
 `;
 
 export const ListImagePreview = styled.div`
+    height: 160px;
     position: relative;
     margin-bottom: 1rem;
     border-radius: var(--rounded);
     overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
     
     img {
         width: 100%;
@@ -63,12 +65,6 @@ export const ListImagePreview = styled.div`
 `;
 
 export const ListCardBody = styled.div`
-    p {
-        font-size: 0.875rem;
-        color: var(--darkGray);
-        line-height: 1.6;
-    }
-
     a {
         display: flex;
         align-items: center;
@@ -92,5 +88,15 @@ export const ListCardBody = styled.div`
 `;
 
 export const ListCardTitle = styled.h4`
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin: 0 0 0.625rem 0;
     color: var(--black);
+`;
+
+export const ListCardExcerpt = styled.p`
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 0 0.625rem 0;
+    color: var(--darkGray);
 `;

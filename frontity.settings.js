@@ -15,7 +15,7 @@ const settings = {
       "name": "@frontity/wp-source",
       state: {
         source: {
-          url: "https://wp.cristhianjhl.com/",
+          url: process.env.WP_URL_API,
           homepage: "/homepage",
           postsPage: "/blog",
           postTypes: [
