@@ -66,6 +66,29 @@ export const Content = styled.div`
             padding: 0.625rem 0;
         }
     }
+
+    pre code {
+        display: block;
+        background: var(--black);
+        color: var(--white);
+        white-space: pre;
+        overflow-x: scroll;
+        max-width: 100%;
+        min-width: 100px;
+        word-wrap: break-word;
+        box-decoration-break: clone;
+    }
+
+    p > code,
+    li > code,
+    dd > code,
+    td > code {
+        background: #ffeff0;
+        word-wrap: break-word;
+        box-decoration-break: clone;
+        padding: .1rem .3rem .2rem;
+        border-radius: .2rem;
+    }
 `;
 
 export const Title = styled.h1`
