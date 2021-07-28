@@ -41,6 +41,10 @@ export function GlobalStyle () {
                         --desktopDevice: 67.5rem;
                     }
 
+                    * {
+                        font-display: swap;
+                    }
+
                     html {
                         font-size: 16px;
                     }

@@ -6,9 +6,6 @@ const settings = {
       "title": "Cristhian Hernández Desarrollador Frontend Freelancer en Lima",
       "description": "Tienes un negocio digital en mente, pero aun no sabes como empezar. Te ayudo a que tu producto o servicio tenga prencencia en Internet."
     },
-    googleAnalytics: {
-      trackingId: "UA-167480853-1",
-    },
   },
   packages: [
     {

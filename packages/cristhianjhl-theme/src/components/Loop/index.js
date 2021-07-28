@@ -34,16 +34,7 @@ function Loop({ data = [], libraries, state }) {
                                         <ListCardExcerpt>
                                             <Html2React html={description} />
                                         </ListCardExcerpt>
-                                        <Link link={link} onClick={() => {
-                                            actions.analytics.event({
-                                            name: "click",
-                                                payload: {
-                                                    category: "proyecto-home-loop",
-                                                    label: "proyecto-home-url",
-                                                    value: link,
-                                                },
-                                            });
-                                        }}>Ver Proyecto &rarr;</Link>
+                                        <Link link={link}>Ver Proyecto &rarr;</Link>
                                     </ListCardBody>
                                 </ListCard>
                             )
