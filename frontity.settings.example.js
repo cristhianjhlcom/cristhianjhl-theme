@@ -7,7 +7,7 @@ const settings = {
       "description": "Tienes un negocio digital en mente, pero aun no sabes como empezar. Te ayudo a que tu producto o servicio tenga prencencia en Internet."
     },
     googleAnalytics: {
-      trackingId: "UA-167480853-1",
+      trackingId: "Google Analytics ID",
     },
   },
   packages: [
@@ -18,7 +18,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://wp.cristhianjhl.com/",
+          url: "WordPress URL API",
           homepage: "/homepage",
           postsPage: "/blog",
           postTypes: [

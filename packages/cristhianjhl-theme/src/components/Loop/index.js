@@ -24,8 +24,6 @@ function Loop({ data = [], libraries, state }) {
                                 yoast_head_json: { description }, 
                                 link  } = state.source[item.type][item.id];
                             
-                            console.log(state.source[item.type][item.id]);
-                            
                             return (
                                 <ListCard key={`posts-${item.id}`}>
                                     <ListImagePreview>
