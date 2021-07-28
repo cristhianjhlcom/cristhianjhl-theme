@@ -6,10 +6,6 @@ import { Hero, ImageContainer, HeroContent, HeroTitle, HeroDescription, HeroCTA,
 import Loop from '../../components/Loop';
 
 function Home({ state, actions, libraries }) {
-    React.useEffect(() => {
-        actions.source.fetch("/proyecto/");
-    }, [])
-
     const data = state.source.get(state.router.link);
     const home = state.source[data.type][data.id];
     const blog = state.source.get(state.source.postsPage);
@@ -17,6 +13,14 @@ function Home({ state, actions, libraries }) {
 
     const { encabezado_hero, contenido_hero, presentacion, big_message, description, avatar } = home.acf;
     const { og_title, og_description } = home.yoast_head_json;
+
+    React.useEffect(() => {
+        // actions.analytics.pageview({
+        //     link: state.router.link,
+        //     title: og_title,
+        // });
+        actions.source.fetch("/proyecto/");
+    }, []);
 
     return (
         <>
