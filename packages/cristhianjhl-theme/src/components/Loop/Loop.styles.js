@@ -2,7 +2,7 @@ import { styled } from "frontity";
 
 export const Wrapper = styled.div`
     width: 95%;
-    max-width: 1260px;
+    max-width: var(--maxWidthMain);
     margin: 0 auto;
 `;
 
@@ -51,7 +51,6 @@ export const ListImagePreview = styled.div`
     margin-bottom: 1rem;
     border-radius: var(--rounded);
     overflow: hidden;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
     
     img {
         width: 100%;

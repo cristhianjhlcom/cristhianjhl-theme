@@ -2,7 +2,7 @@ import { styled } from "frontity";
 
 export const Wrapper = styled.div`
     width: 100%;
-    max-width: var(--maxWidth);
+    max-width: var(--maxWidthMain);
     margin: 0 auto;
 `;
 

@@ -1,95 +1,93 @@
 import { styled } from "frontity";
+import Link from "@frontity/components/link";
 
 export const Wrapper = styled.div`
     width: 95%;
-    max-width: 1260px;
+    max-width: var(--maxWidthPosts);
     margin: 0 auto;
     min-height: calc(100vh - 250px);
 `;
 
 export const List = styled.section`
+    padding: 2.5rem 0;
+`;
 
+export const ListContent = styled.div`
+    width: 100%;
 `;
 
 export const ListItem = styled.article`
-    background-color: var(--white);
-    padding: 1.25rem;
-    margin-bottom: 1.25rem;
-    border-radius: var(--rounded);
+    margin-bottom: 2.5rem;
 
     @media (min-width: 768px) {
         display: flex;
         align-items: center;
         flex-direction: row;
-        gap: 1.25rem;
+        gap: 2.5rem;
     }
 `;
 
 export const ListThumbnail = styled.div`
-    margin: 0 0 1.25rem 0;
-    border-radius: var(--rounded);
-    overflow: hidden;
-
     img {
-        width: 500px;
-        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    @media (min-width: 960px) {
-        flex: none;
-        margin: 0;
+    @media screen and (min-width: 768px) {
+        width: 300px;
+        height: 160px;
     }
 `;
 
-export const ListContent = styled.div`
-    h4 {
-        margin: 0 0 1.25rem 0;
-    }
-
-    span {
-        display: block;
-        color: var(--gray);
-        margin: 0 0 1.25rem 0;
-    }
-
-    p {
-        line-height: 2;
-        margin: 0 0 1.25rem 0;
-    }
-
+export const Title = styled.h4`
+    margin: 0 0 1.125rem 0;
+    line-height: 1.5;
     a {
-        color: var(--linkColor);
+        color: var(--darkGray);
         text-decoration: none;
-    }
 
-    a.view-url {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.625rem;
-        padding: 0.625rem 0.75rem;
-        background-color: var(--primaryColor);
-        color: var(--white);
-        text-decoration: none;
-        border-radius: var(--rounded);
-        transition: background-color 450ms ease;
-        font-family: var(--fontFamilyTitle);
-        font-weight: bold;
-        font-size: 1rem;
-        line-height: 1.6;
-    
         &:hover {
-            background-color: var(--primaryColorHover);
+            text-decoration: underline;
         }
-        
-        @media (min-width: 768px) {
-            display: inline-flex;
-            background-color: transparent;
-            color: var(--primaryColor);
-
-            &:hover {
-                background-color: var(--blueGray);
-            }
+        @media screen and (min-width: 768px) {
+            font-size: 1.5rem;
         }
     }
+`;
+
+export const Category = styled.span`
+    display: block;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    margin: 0;
+`;
+
+export const Author = styled.div`
+`;
+
+export const Information = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    p {
+        margin: 0 0 1.125rem 0;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+`;
+
+export const Text = styled.p`
+    margin: 0 0 1.125rem 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+`;
+
+export const Published = styled.small`
+    margin: 0;
+    color: var(--gray);
 `;

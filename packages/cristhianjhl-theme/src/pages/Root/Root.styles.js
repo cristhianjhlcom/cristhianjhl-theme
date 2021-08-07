@@ -8,6 +8,6 @@ export const Main = styled.main`
 
 export const Container = styled.div`
     width: 95%;
-    max-width: 1260px;
+    max-width: var(--maxWidthMain);
     margin: 0 auto;
 `;

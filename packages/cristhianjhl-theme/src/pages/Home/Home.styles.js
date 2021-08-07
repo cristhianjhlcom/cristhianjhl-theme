@@ -2,14 +2,14 @@ import { styled } from "frontity";
 
 export const Wrapper = styled.div`
     width: 95%;
-    max-width: 1260px;
+    max-width: var(--maxWidthMain);
     margin: 0 auto;
     min-height: calc(100vh - 250px);
 `;
 
 export const Hero = styled.section`
     width: 95%;
-    max-width: 1260px;
+    max-width: var(--maxWidthMain);
     margin: 0 auto;
 
     @media (min-width: 768px) {
@@ -73,7 +73,7 @@ export const HeroCTA = styled.a`
 
     span {
         font-family: var(--fontFamilyTitle);
-        font-weight: bold;
+        font-weight: 300;
         font-size: 1rem;
         line-height: 1.6;
     }

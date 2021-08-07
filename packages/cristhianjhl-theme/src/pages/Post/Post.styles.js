@@ -2,7 +2,7 @@ import { styled } from "frontity";
 
 export const Wrapper = styled.section`
     width: 95%;
-    max-width: 1260px;
+    max-width: var(--maxWidthPosts);
     margin: 0 auto;
     min-height: calc(100vh - 250px);
 `;
@@ -29,7 +29,6 @@ export const Content = styled.div`
     width: 100%;
     max-width: 60rem;
     margin: 0 auto 1.25rem auto;
-    background-color: rgba(255, 255, 255, 0.88);
     padding: 1.25rem;
     border-radius: var(--rounded);
 

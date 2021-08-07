@@ -2,7 +2,7 @@ import { styled } from "frontity";
 
 export const Nav = styled.nav`
     height: 80px;
-    max-width: 1260px;
+    max-width: var(--maxWidthMain);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

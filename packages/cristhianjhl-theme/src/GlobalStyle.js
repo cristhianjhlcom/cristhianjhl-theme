@@ -17,8 +17,8 @@ export function GlobalStyle () {
             styles={
                 css`
                     :root {
-                        --fontFamilyTitle: "Poppins", sans-serif;
-                        --fontFamilyText: "Source Sans Pro", sans-serif;
+                        --fontFamilyTitle: "Tahoma", sans-serif;
+                        --fontFamilyText: "Arial", serif;
                         --white: #ffffff;
                         --black: #111;
                         --gray: #a4a4a4;
@@ -36,9 +36,8 @@ export function GlobalStyle () {
                         --red: #f44336;
                         --rounded: 0.25rem;
 
-                        --mobileDevice: 26.25rem;
-                        --tableDevice: 48rem;
-                        --desktopDevice: 67.5rem;
+                        --maxWidthPosts: 1000px;
+                        --maxWidthMain: 1260px;
                     }
 
                     * {

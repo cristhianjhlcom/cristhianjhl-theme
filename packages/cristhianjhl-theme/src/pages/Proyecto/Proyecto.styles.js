@@ -2,7 +2,7 @@ import { styled } from "frontity";
 
 export const Wrapper = styled.section`
     width: 95%;
-    max-width: 1260px;
+    max-width: var(--maxWidthPosts);
     margin: 0 auto;
     min-height: calc(100vh - 250px);
 `;
@@ -34,7 +34,6 @@ export const Content = styled.div`
     width: 100%;
     max-width: 60rem;
     margin: 0 auto 1.25rem auto;
-    background-color: rgba(255, 255, 255, 0.88);
     padding: 1.25rem;
     border-radius: var(--rounded);
 
@@ -105,7 +104,6 @@ export const Thumbnail = styled.div`
     height: 190px;
     margin: 0 auto 1.25rem auto;
     overflow: hidden;
-    border-radius: var(--rounded);
     img {
         width: 100%;
         object-fit: cover;
@@ -117,6 +115,5 @@ export const Thumbnail = styled.div`
 
     @media screen and (min-width: 1060px) {
         height: 500px;
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
     }
 `;
